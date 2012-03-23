@@ -52,7 +52,6 @@
             <TitledBorder title="Kirjautuminen"/>
           </Border>
         </Property>
-        <Property name="name" type="java.lang.String" value="null"/>
       </Properties>
 
       <Layout>

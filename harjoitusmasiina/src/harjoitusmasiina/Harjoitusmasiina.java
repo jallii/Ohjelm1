@@ -39,6 +39,11 @@ public class Harjoitusmasiina {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+    
+        Kirjaudu kirjaudu = new Kirjaudu (new UIOlio());
+
+        onnetar.run();
+
+    } // TODO code application logic here
     }
 }

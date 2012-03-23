@@ -1,0 +1,18 @@
+﻿Tehtävämäärittely:
+	
+	Työnimi:	Harjoitusmasiina
+
+Työn aihe:	Automaattinen kokeenkorjaaja /harjoituskone
+
+Kuvaus: 	
+Toteutetaan ohjelmisto, jonka avulla kurssin opettaja voi toteuttaa automaattisen kokeen tai harjoituttaa oppilaitaan itsenäisesti.  
+
+Opettaja luo opiskelijoiden tunnukset, antaa vastaussähköpostiosoitteen ja toimittaa kurssin aineiston ohjelmalle. Opettaja antaa ohjelman käyttöön määrämuotoisen tekstitiedoston, jonka perusteella opiskelija voi harjoitella itsenäisesti vastaamalla monivalintatyyppisiin kysymyksiin tai suorittaa kokeen.  Kurssin tavoitteet ja info on nähtävissä ohjelman sisällä, jolloin opettaja voi käyttää näitä myös tärkeäksi katsomansa ohjeistavan informaation välittämiseen. 
+
+Opiskelija kirjautuu ohjelmiston käyttäjäksi, harjoittelee aineiston avulla ja suorittaa kokeen. Järjestelmään kirjautuminen onnistuu jos salasana ja käyttäjätunnus oikein. 
+
+Harjoittelumoodissa ohjelma esittää monivalintakysymyksiä. Opiskelijan vastatessa kysymyksiin ohjelma kertoo oikean vastauksen ja pisteet. 
+
+Koemoodissa osaan kysymyksiä voi vastata myös vapaamuotoisella tekstillä. Koemoodissa ohjelma kysyy opiskelijalta koekysymykset ja toimittaa vastaukset sähköpostilla opettajalle. Monivalintakysymykset tulevat perille valmiiksi pisteytettyinä, joten opettaja joutuu manuaalisesti vain pisteyttämään vapaamuotoiset kysymyksensä ja antamaan kokonaispisteet.  
+
+Ohjelmiston ensimmäinen versio on suunniteltu toimimaan palvelimella web käyttöliittymän avulla kurssikohtaisesti itsenäisenä, jolloin sitä voi käyttää pelkän nettiselaimen avulla.  Ohjelmistoa voi myös jakaa erillisenä tiedostona toimitettavana ohjelmana.  Jos siis ohjelmistoa haluaa käyttää monen kurssin kohdalla on jokaiselle kurssille käynnistettävä erillinen versio ohjelmasta. Myöhemmillä versioilla voi rakentaa toiminnallisuutta monien kurssien hallinnointiin saman ohjelman sisällä ja monipuolistaa erilaisten automaattisesti korjattavien kysymysten tyyppejä ja vaikeustasoja, tai lisätä opiskelijalle tarjolla olevan materiaalin monipuolisuutta myös kuviin, symboleihin, videoihin tai muuhun saatavana olevaan oheismateriaaliin.
