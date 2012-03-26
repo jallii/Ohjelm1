@@ -2,23 +2,23 @@
 package harjoitusmasiina;
 
 import java.util.HashMap;
+
 /**
- *
+ * Placeholderi 
  * @author lmjaland
  */
-public class Kysymys <K,V>{
+public abstract class Kysymys <K,V>{
+  String kysymys;
+    String vastaus;
 
-   Vastaus v1;
-  
+    HashMap<String,String> kysymystaulu = new HashMap<String,String>();
     
-  public HashMap kysymys <K,V>()=;
-          
-          
-    HashMap<tieto,boolean> vastaus = new HashMap <tieto,boolean>();
- 
-    HashMap<String,String> kysymys = new HashMap<String,String>();
- 
-    
-  
-  
+    if (kysymystaulu.containsKey(kysymys)) {
+            if kysymystaulu.containsValue(vastaus) {
+                System.out.println("Antamasi kysymys " + kysymystaulu.get(kysymys) + " on jo olemassa");
+            } else {
+                kysymystaulu.put(kysymys, vastaus);
+            }
+        }
+    }
 }

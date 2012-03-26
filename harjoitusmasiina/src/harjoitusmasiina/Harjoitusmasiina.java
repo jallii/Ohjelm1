@@ -1,5 +1,7 @@
 package harjoitusmasiina;
 
+import kirjautuminen.Kirjaudu;
+
 /**
  * Työn aihe: Automaattinen kokeenkorjaaja /harjoituskone
  *

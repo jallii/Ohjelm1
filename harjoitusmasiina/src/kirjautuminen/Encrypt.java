@@ -1,12 +1,5 @@
-
-package harjoitusmasiina;
-
-/**
- *
- * @author lmjaland
- */
-
- import java.security.*;
+package kirjautuminen;
+import java.security.*;
 
 public class Encrypt {
 
@@ -15,11 +8,7 @@ public class Encrypt {
    public String getPassword() {
       return password;
    }
-
-
-   public Encrypt() 
-   {
-   }
+   public Encrypt() {  }
 
    public String new2Password( String passwd ) {
       try {
