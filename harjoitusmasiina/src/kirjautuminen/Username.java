@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package kirjautuminen;
 
 /**
@@ -10,18 +7,25 @@ package kirjautuminen;
  */
 public class Username {
 
-    private String username = "";
+    private String username;
 
-    public Username(String name) {
-        this.username = name;
+    public Username() {
+        this.username="";
     }
 
-    public String getUsername() {
+    public Username(String ktunnus) {
+        this.username = ktunnus;
+    }
+
+    public void setUsername(String ktunnus) {
+        this.username = ktunnus;
+    }
+    public Username getUser(String ktunnus) {
+        Username apu = new Username();
+        return apu;
+    }
+    public String getUserString(Username ktunnusolio) {
         return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 
     @Override

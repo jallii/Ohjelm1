@@ -10,7 +10,6 @@ import java.util.HashMap;
  * @author lmjaland
  */
 public class Userdb implements Serializable {
-//    private String username = "";
 
     private HashMap<Username, Userdata> users;
 
@@ -48,10 +47,9 @@ public class Userdb implements Serializable {
      * @return palauttaa arvon tosi jos käyttäjä on opettaja
      */
     public boolean onkoOpe(Username name) {
-        
         Userdata apu;
-         apu=users.get(name);
-        return users.isRole(users.get(name));
+        apu = users.get(name);
+        return apu.onkoRoolinaOpe();
     }
 
     @Override
@@ -60,10 +58,11 @@ public class Userdb implements Serializable {
     }
 
     public boolean tarkistaSalasana(String ktunnus, String pwehdotus) {
-        Userdata user = users.get(ktunnus);
-        String pwlistassa;
-        pwlistassa = user.getPasswd();
-        if (pwehdotus.equals(pwlistassa)) {
+        Username test = new Username();
+        Username user = test.getUser(ktunnus);
+        Userdata U = users.get(user);
+        boolean containsKey = users.containsKey(user);
+        if (containsKey && U.matchPW(pwehdotus)) {
             return true;
         } else {
             return false;

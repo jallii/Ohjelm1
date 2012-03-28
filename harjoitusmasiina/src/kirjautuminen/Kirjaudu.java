@@ -84,16 +84,16 @@ public class Kirjaudu {
 //            return false;
 //        }
 //    }
-
-    public void kirjaudu(String ktunnus, String salasana) {
-        ktunnus = kysy(klogin);
-        
-        if (users.getUsername().equalsIgnoreCase(klogin)) {
-            kpasswd = kysy(kpasswd);
-        }
-    }
-
-    private Userdata kayttajat(String ktunnus) {
-        throw new UnsupportedOperationException("Not yet implemented");
-    }
+//
+//    public void kirjaudu(String ktunnus, String salasana) {
+//        ktunnus = kysy(klogin);
+//        
+//        if (users.getUsername().equalsIgnoreCase(klogin)) {
+//            kpasswd = kysy(kpasswd);
+//        }
+//    }
+//
+//    private Userdata kayttajat(String ktunnus) {
+//        throw new UnsupportedOperationException("Not yet implemented");
+//    }
 }
