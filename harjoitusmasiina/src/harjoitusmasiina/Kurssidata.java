@@ -10,14 +10,14 @@ import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
 /**
- *Kurssidata olion joutuu luomaan ulkopuolella
+ * Kurssidata olion joutuu luomaan ulkopuolella
+ *
  * @author lmjaland
  */
 public class Kurssidata implements Externalizable {
 
     private Kurssiheader header;
     private Kurssibody body;
-    
 
     public Kurssidata(Kurssiheader header, Kurssibody body) {
         this.header = header;
@@ -35,11 +35,10 @@ public class Kurssidata implements Externalizable {
     public void setBody(Kurssibody body) {
         this.body = body;
     }
-    
+
     public Kurssibody getBody() {
         return body;
     }
-
 
     /**
      * Tallenna kurssidata tiedostoon
@@ -47,12 +46,13 @@ public class Kurssidata implements Externalizable {
      */
     @Override
     public void writeExternal(ObjectOutput oo) throws IOException {
-        /*periaatteessa mitä tahansa,
-         * kunhan käsket oo:ta tekemään ne asiat loppujen lopuksi
-         * 
+        /*
+         * periaatteessa mitä tahansa, kunhan käsket oo:ta tekemään ne asiat
+         * loppujen lopuksi
+         *
          * Muodon muokkausta, jälkikäsittelyä jne.
          */
-       oo.writeObject(this);
+        oo.writeObject(this);
     }
 
     /**

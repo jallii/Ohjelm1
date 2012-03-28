@@ -40,12 +40,36 @@ public class Harjoitusmasiina {
     /**
      * @param args the command line arguments
      */
+    
+    
+  
+    
+//    
+// /**
+// * Tee filestä outputstream
+// */
+//    public ObjectOutputStream teeOutputStream(File filenimi) throws FileNotFoundException, IOException {
+//        FileOutputStream fos = new FileOutputStream(filenimi);
+//        ObjectOutputStream oos = new ObjectOutputStream(fos);
+//        return oos;
+//    }
+//
+//    /**
+//     * Tee filestä inputstream
+//     */
+//    public ObjectInputStream teeInputStream(File filenimi) throws FileNotFoundException, IOException {
+//        FileInputStream fis = new FileInputStream(filenimi);
+//        ObjectInputStream ois = new ObjectInputStream(fis);
+//        return ois;
+//    }
+//    
+
+
+
     public static void main(String[] args) {
     
-        Kirjaudu kirjaudu = new Kirjaudu (new UIOlio());
-
-        onnetar.run();
+     
 
     } // TODO code application logic here
-    }
+    
 }
